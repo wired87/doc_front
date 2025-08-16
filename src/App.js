@@ -45,7 +45,7 @@ const handleUpload = async () => {
 
   try {
     const res = await fetch(
-      process.env.REACT_APP_API_URL,
+      "https://bestbrain.tech/inv/",
       { method: 'POST', body: formData });
     if (!res.ok) throw new Error('Network response was not ok');
 
