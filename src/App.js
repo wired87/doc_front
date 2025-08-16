@@ -37,8 +37,16 @@ const handleUpload = async () => {
   } else{
     console.log("NO endpoint detected")
   }
+  if (formData) {
+    console.log("formData set")
+  } else{
+    console.log("NO formData")
+  }
+
   try {
-    const res = await fetch(process.env.REACT_APP_API_URL, { method: 'POST', body: formData });
+    const res = await fetch(
+      process.env.REACT_APP_API_URL,
+      { method: 'POST', body: formData });
     if (!res.ok) throw new Error('Network response was not ok');
 
     const blob = await res.blob();
