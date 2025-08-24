@@ -45,7 +45,7 @@ const handleUpload = async () => {
 
   try {
     const res = await fetch(
-      "https://bestbrain.tech/inv/",
+      "https://bestbrain.tech/docai/inv/",
       { method: 'POST', body: formData });
     if (!res.ok) throw new Error('Network response was not ok');
 
