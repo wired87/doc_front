@@ -85,6 +85,9 @@ const handleUpload = async () => {
           Sie möchten mehr Dateien auf einmal hochladen oder benötigen andere Datei Formate?
           Senden Sie uns eine Email an 'office@botworld.cloud'!
         </p>
+        <p>
+          Das Ergebnis landet direkt im Download-Bereich Ihres Browsers
+        </p>
         <input
           type="file"
           multiple
