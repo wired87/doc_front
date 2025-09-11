@@ -9,7 +9,7 @@ const App = () => {
   const fileInputRef = useRef(null);
 
   const handleFiles = (newFiles) => {
-    const combinedFiles = [...files, ...newFiles].slice(0, 50);
+    const combinedFiles = [...files, ...newFiles].slice(0, 2);
     setFiles(combinedFiles);
   };
 
@@ -79,8 +79,12 @@ const handleUpload = async () => {
         onDrop={handleDrop}
         onClick={() => fileInputRef.current.click()}
       >
-        <p className="dropzone-text-main">Dateien hierher ziehen oder klicken, um auszuwählen</p>
-        <p className="dropzone-text-sub">({files.length} von 50 Dateien ausgewählt)</p>
+        <p className="dropzone-text-main">PDF Dateien hierher ziehen oder klicken, um auszuwählen</p>
+        <p className="dropzone-text-sub">({files.length} von 2 Dateien ausgewählt)</p>
+        <p className="dropzone-text-sub">
+          Sie möchten mehr Dateien auf einmal hochladen oder benötigen andere Datei Formate?
+          Senden Sie uns eine Email an 'office@botworld.cloud'!
+        </p>
         <input
           type="file"
           multiple
