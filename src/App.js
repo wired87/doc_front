@@ -79,14 +79,24 @@ const handleUpload = async () => {
         onDrop={handleDrop}
         onClick={() => fileInputRef.current.click()}
       >
-        <p className="dropzone-text-main">PDF Dateien hierher ziehen oder klicken, um auszuwählen</p>
         <p className="dropzone-text-sub">({files.length} von 2 Dateien ausgewählt)</p>
         <p className="dropzone-text-sub">
-          Sie möchten mehr Dateien auf einmal hochladen oder benötigen andere Datei Formate?
-          Senden Sie uns eine Email an 'office@botworld.cloud'!
+          Mehr Dateien auf einmal? <br/>
+          Andere Datei Formate (in/out)? <br/>
+          Weitere Dokumente? <br/>
+          Sende uns eine Email an 'office@botworld.cloud'!
         </p>
+        <p className="dropzone-text-main">Anleitung</p>
+        <p className="dropzone-text-sub">
+          - Datei in die DropBox ziehen und auf bestätigen klicken<br/>
+          - Das Das Ergebnis landet direkt im Download-Bereich des Browsers<br/>
+          - Importieren Sie das csv Dokument in Google Sheets für die Tabellenansicht<br/>
+          Fertig!
+        </p>
+        <p className="dropzone-text-main">PDF Dateien hierher ziehen oder klicken, um auszuwählen</p>
+
         <p>
-          Das Ergebnis landet direkt im Download-Bereich Ihres Browsers
+
         </p>
         <input
           type="file"
